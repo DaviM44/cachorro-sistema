@@ -1,0 +1,13 @@
+<div class="mt-3">
+    <img [src]="dog.message"
+    width="700px"
+    class="shadow-lg rounded">
+    <div class="display-6">
+        <span *ngFor="let name of getBreed()">
+            {{name | titlecase }}
+        </span>
+    </div>
+    <div class="btn btn-danger" (click)="loadDog()">
+        Próximo
+    </div>
+</div>
